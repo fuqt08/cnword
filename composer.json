@@ -1,0 +1,22 @@
+{
+  "name": "fuqt08/cnword",
+  "description": "word by cn,big5 pingyin",
+  "license": "Apache-2.0",
+  "minimum-stability": "dev",
+  "version": "0.1",
+  "authors": [
+    {
+      "name": "fuqt08",
+      "email": "fuqt08@163.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "catfan/Medoo": "^1.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "fuqt08\\": "src/"//代码库的路径，前面为命名空间，src为代码存放的路径
+    }
+  }
+}
