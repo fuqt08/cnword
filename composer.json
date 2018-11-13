@@ -1,8 +1,6 @@
 {
   "name": "fuqt08/cnword",
   "description": "word by cn,big5 pingyin",
-  "license": "Apache-2.0",
-  "minimum-stability": "dev",
   "version": "0.1",
   "authors": [
     {
