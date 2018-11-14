@@ -8,7 +8,8 @@ class Word
 {
     /**
      * 查字相关信息
-     * @param $zi
+     * @param string $zi 简体字
+     * @param string $field 字段名
      * @return bool|array|string
      */
     public static function find($zi, $field = '')
