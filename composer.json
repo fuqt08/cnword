@@ -1,6 +1,6 @@
 {
   "name": "fuqt08/cnword",
-  "description": "word by cn,big5 pingyin",
+  "description": "根据中文汉字查询",
   "version": "0.2",
   "license": "MIT",
   "authors": [
