@@ -1,6 +1,6 @@
 {
   "name": "fuqt08/cnword",
-  "description": "根据中文汉字查询",
+  "description": "根据中文汉字查询。",
   "version": "1.0.1",
   "minimum-stability": "dev",
   "license": "MIT",
