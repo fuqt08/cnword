@@ -6,7 +6,11 @@ use Medoo\Medoo;
 
 class Word
 {
-
+    /**
+     * 查字相关信息
+     * @param $zi
+     * @return bool|array
+     */
     public static function find($zi)
     {
         $config = [
