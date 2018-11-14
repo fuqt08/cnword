@@ -2,6 +2,7 @@
   "name": "fuqt08/cnword",
   "description": "word by cn,big5 pingyin",
   "version": "0.2",
+  "license": "MIT",
   "authors": [
     {
       "name": "fuqt08",
