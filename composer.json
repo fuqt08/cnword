@@ -1,18 +1,17 @@
 {
   "name": "fuqt08/cnword",
   "description": "根据中文汉字查询。",
-  "version": "1.0.1",
   "license": "MIT",
   "authors": [
     {
-      "name": "fuqt08",
-      "email": "fuqt08@163.com"
+      "name": "fuqt08"
     }
   ],
   "require": {
     "php": ">=5.4.0",
     "catfan/Medoo": "^1.6"
   },
+  "minimum-stability": "dev",
   "autoload": {
     "psr-4": {
       "fuqt08\\": "src/"
