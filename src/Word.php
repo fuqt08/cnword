@@ -8,11 +8,11 @@ class Word
 {
     /**
      * 查字相关信息
-     * @param string $zi 简体字
-     * @param string $field 字段名
+     * @param string $zi 汉字
+     * @param bool $isBig5 是否繁体字 默认查简体字
      * @return bool|array|string
      */
-    public static function find($zi, $field = '')
+    public static function find($zi, $isBig5 = true)
     {
         $config = [
             'database_type' => 'sqlite',
@@ -20,12 +20,17 @@ class Word
         ];
         $fieldList = ['zi', 'big5', 'bihua', 'bihua2', 'py', 'py2', 'shengmu', 'yunmu', 'bushou', 'wx', 'wubi'];
         $dataBase = new Medoo($config);
-        $data = $dataBase->get('bw_cnword', $fieldList, ['zi' => $zi]);
+        $where = [
+            'zi' => $zi
+        ];
+        if (false === $isBig5) {
+            $where = [
+                'big5' => $zi
+            ];
+        }
+        $data = $dataBase->get('bw_cnword', $fieldList, $where);
         if (empty($data)) {
             return false;
-        }
-        if (in_array($field, $fieldList)) {
-            return $data[$field];
         }
         return $data;
     }
